@@ -6,7 +6,7 @@
     <title>Privacy Policy - HODL Time</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 800px;
@@ -65,66 +65,78 @@
 </head>
 <body>
     <h1>Privacy Policy for HODL Time</h1>
-    <p class="last-updated">Last updated: March 13, 2026</p>
+    <p class="last-updated">Last updated: April 24, 2026</p>
 
-    <p>At HODL Time, your privacy is our top priority. This privacy policy outlines our data practices in the simplest terms:</p>
-    <p>Throughout this document, references to "the app" refer to HODL Time across all available Apple platforms.</p>
-    
-    <h2>Data Collection and Usage</h2>
+    <p>HODL Time is designed to work without creating an account or sending your personal data to our own servers. Throughout this document, references to "the app" refer to HODL Time across its supported Apple surfaces, including iPhone, Apple Watch, widgets, and related system integrations.</p>
+
+    <h2>Data We Do Not Collect</h2>
     <ul>
-        <li>HODL Time does not collect, store, or transmit any personal information to or from external servers.</li>
-        <li>We do not require account creation, login, or any identifying information to use the app.</li>
-        <li>We do not use any analytics, advertising SDKs, or behavioral tracking tools.</li>
+        <li>We do not require account creation, login, or profile setup.</li>
+        <li>We do not run our own analytics, advertising, or behavioral tracking systems.</li>
+        <li>We do not collect or store personal information on external servers operated by us.</li>
     </ul>
 
-    <h2>Local Storage</h2>
+    <h2>Data Stored On Your Device</h2>
     <ul>
-        <li>All app preferences (like currency selection, portfolio holdings, theme settings, and price lock settings) are stored locally on your device using Apple's App Groups framework.</li>
-        <li>This data is never sent to external servers or shared with third parties.</li>
-        <li>Your price viewing history is also stored locally and is not shared.</li>
+        <li>HODL Time stores app data locally on your device using Apple's local storage technologies, including App Groups where shared state is needed.</li>
+        <li>Locally stored data can include settings such as selected currency pair, notification preferences, theme and display choices, portfolio settings and holdings if you enter them, and lock-related state.</li>
+        <li>The app also stores local experience data such as price-viewing history, milestone history, total HODL time, and early unlock balances.</li>
+        <li>This locally stored data is not sent to external servers operated by us.</li>
     </ul>
 
-    <h2>Cross-Device Data Synchronization</h2>
+    <h2>Purchases And Early Unlocks</h2>
     <ul>
-        <li>When using both iPhone and Apple Watch, certain data synchronizes between devices using Apple's WatchConnectivity framework.</li>
-        <li>This synchronization includes user preferences, portfolio settings, lock states, and price viewing history.</li>
-        <li>All synchronized data remains within Apple's secure ecosystem and is not accessible to external parties.</li>
+        <li>Optional paid early unlocks are sold on iPhone using Apple's StoreKit framework.</li>
+        <li>Purchase processing, payment authorization, receipts, refunds, and billing support are handled by Apple through the App Store.</li>
+        <li>We do not receive or store your payment card details.</li>
+        <li>The app may receive StoreKit product identifiers, transaction identifiers, purchase status, and verification results so completed consumable purchases can be delivered correctly.</li>
+        <li>We may store local purchase-delivery state on your device, including processed consumable transaction identifiers, to prevent duplicate credit grants and help unfinished transactions recover cleanly.</li>
+        <li>Used consumables cannot be restored by Apple. Restore behavior is limited to unfinished transactions that Apple still makes available.</li>
+    </ul>
+
+    <h2>Cross-Device Sync</h2>
+    <ul>
+        <li>When you use both iPhone and Apple Watch, certain app state can synchronize through Apple's App Groups and WatchConnectivity frameworks.</li>
+        <li>This synced state can include settings, lock state, total HODL time, milestone progress, early unlock balance, and portfolio preferences or holdings if you use those features.</li>
+        <li>All synced data remains inside Apple's ecosystem and is not exposed to external parties by us.</li>
+    </ul>
+
+    <h2>Widgets, Live Activities, And Notifications</h2>
+    <ul>
+        <li>Widgets and related system surfaces may display locally stored or app-group-shared state so the app can show the correct price, lock status, and HODL progress.</li>
+        <li>On supported devices, Live Activities may display active lock state without requiring separate account data.</li>
+        <li>If you enable notifications, the app uses local notifications for lock-end reminders and milestone reminders.</li>
+        <li>Notification permissions are requested through Apple's system prompt only when you choose to enable them.</li>
     </ul>
 
     <h2>External Services</h2>
     <ul>
-        <li>Price data is retrieved using the Binance public API.</li>
-        <li>While we do not send user data to Binance, your device may interact with their servers to retrieve market data.</li>
-        <li>Please refer to Binance's privacy policy for more details about their data handling.</li>
-        <li>Exchange rates are fetched from the Frankfurter API for most currencies, and from Open Exchange Rates for certain additional currencies (e.g. TWD, VND, AED, RUB, ARS, NGN, UAH).</li>
-        <li>The app utilizes Apple's App Groups and WatchConnectivity frameworks for cross-device functionality.</li>
+        <li>Bitcoin price data is retrieved from Binance public market data endpoints.</li>
+        <li>Exchange rates are retrieved from Frankfurter for most currencies and from Open Exchange Rates for certain additional currencies.</li>
+        <li>Although we do not send personal profile data to these services, your device interacts with their servers when fetching market data.</li>
+        <li>Please review those providers' own terms and privacy materials if you want more detail about their handling of requests.</li>
     </ul>
 
-    <h2>Notifications</h2>
+    <h2>Your Choices</h2>
     <ul>
-        <li>If enabled, notifications are used solely to inform you when your price viewing lock ends.</li>
-        <li>Notification permissions are requested only when you choose to enable them.</li>
-        <li>You can disable notifications at any time in the app settings of the iPhone HODL Time app.</li>
+        <li>You can disable notifications at any time in the app or in system settings.</li>
+        <li>You can remove locally stored app data by deleting the app from your device, subject to any data Apple may retain for App Store purchase, billing, tax, legal, or fraud-prevention purposes.</li>
+        <li>Because HODL Time does not provide an account-based cloud service, deleting the app, resetting your device, changing devices, or restoring from an incomplete backup may remove locally stored settings, history, HODL progress, and early-unlock balances.</li>
+        <li>You control whether to enter optional portfolio information or make optional paid early unlock purchases.</li>
     </ul>
 
-    <h2>Your Rights</h2>
+    <h2>Changes To This Policy</h2>
     <ul>
-        <li>You have complete control over your data as it's stored locally on your device.</li>
-        <li>You can delete the app at any time to remove all stored data.</li>
-    </ul>
-
-    <h2>Changes to Privacy Policy</h2>
-    <ul>
-        <li>We may update this privacy policy periodically.</li>
-        <li>Continued use of the app after any changes constitutes acceptance of the updated policy.</li>
+        <li>We may update this privacy policy from time to time to reflect product changes or legal updates.</li>
+        <li>Continued use of the app after an update means you accept the revised policy.</li>
     </ul>
 
     <div class="contact">
         Contact us at <a href="mailto:hodltime.apps@gmail.com">hodltime.apps@gmail.com</a>
     </div>
-    
+
     <div style="text-align: center;">
         <a href="index.html" class="back-link">Back to Home</a>
     </div>
 </body>
-</html> 
+</html>
