@@ -5,72 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HODL Time - Legal Documents</title>
     <style>
+        :root {
+            --accent: #E47631;
+            --accent-dark: #373F80;
+            --ink: #1E211F;
+            --muted: #69706A;
+            --paper: #FFFDF9;
+            --panel: rgba(255, 255, 255, 0.82);
+            --line: rgba(228, 118, 49, 0.22);
+            --shadow: 0 24px 80px rgba(30, 33, 31, 0.10);
+        }
+        * {
+            box-sizing: border-box;
+        }
         body {
+            min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            line-height: 1.65;
+            color: var(--ink);
+            max-width: 880px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 58px 22px;
             text-align: center;
+            background:
+                linear-gradient(135deg, rgba(228, 118, 49, 0.16), rgba(55, 63, 128, 0.10) 42%, rgba(255, 253, 249, 0) 72%),
+                var(--paper);
         }
         h1 {
-            color: #FF9500;
-            margin-bottom: 16px;
+            color: var(--ink);
+            margin: 0 auto 18px;
+            max-width: 720px;
+            font-size: clamp(2.25rem, 8vw, 4rem);
+            line-height: 1.04;
+            letter-spacing: 0;
+        }
+        h1::before {
+            content: "";
+            display: block;
+            width: 56px;
+            height: 6px;
+            margin: 0 auto 18px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-dark));
         }
         .subtitle {
-            color: #555;
-            max-width: 620px;
+            color: var(--muted);
+            max-width: 660px;
             margin: 0 auto 12px;
+            font-size: 1.05rem;
         }
         .last-updated {
-            color: #666;
+            color: var(--muted);
             font-style: italic;
-            margin-bottom: 32px;
+            margin-bottom: 36px;
         }
         .links {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-            margin-bottom: 40px;
+            display: grid;
+            gap: 14px;
+            max-width: 520px;
+            margin: 0 auto 42px;
         }
         a {
             display: inline-block;
-            padding: 15px 30px;
-            background-color: #FF9500;
-            color: white;
+            padding: 15px 24px;
+            background: var(--panel);
+            color: var(--ink);
             text-decoration: none;
+            border: 1px solid var(--line);
             border-radius: 8px;
-            font-weight: 500;
-            transition: background-color 0.2s;
-            width: 220px;
+            font-weight: 700;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            width: 100%;
             text-align: center;
+            box-shadow: 0 12px 32px rgba(30, 33, 31, 0.08);
         }
         a:hover {
-            background-color: #E68600;
+            transform: translateY(-1px);
+            border-color: rgba(228, 118, 49, 0.46);
+            box-shadow: var(--shadow);
         }
         .contact {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #f5f5f5;
+            margin: 0 auto;
+            max-width: 520px;
+            padding: 22px;
+            background: var(--panel);
+            border: 1px solid var(--line);
             border-radius: 8px;
+            box-shadow: var(--shadow);
         }
         .contact a {
-            background-color: transparent;
-            color: #FF9500;
+            background: transparent;
+            color: var(--accent);
             padding: 0;
-            font-weight: normal;
+            font-weight: 700;
             width: auto;
+            border: 0;
+            box-shadow: none;
         }
         .contact a:hover {
+            transform: none;
             text-decoration: underline;
+            box-shadow: none;
+        }
+        @media (max-width: 640px) {
+            body {
+                padding: 42px 18px;
+            }
         }
     </style>
 </head>
 <body>
     <h1>HODL Time Legal Documents</h1>
-    <p class="subtitle">These documents describe HODL Time's current terms, privacy practices, and financial disclaimer across iPhone, Apple Watch, widgets, and optional early unlock purchases.</p>
+    <p class="subtitle">These documents describe HODL Time's current terms, privacy practices, and financial disclaimer across iPhone, iPad, Apple Watch, widgets, and optional early unlock purchases.</p>
     <p class="last-updated">Last updated: April 24, 2026</p>
 
     <div class="links">

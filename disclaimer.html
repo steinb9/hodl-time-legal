@@ -5,58 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disclaimer - HODL Time</title>
     <style>
+        :root {
+            --accent: #E47631;
+            --accent-dark: #373F80;
+            --ink: #1E211F;
+            --muted: #69706A;
+            --paper: #FFFDF9;
+            --panel: rgba(255, 255, 255, 0.82);
+            --line: rgba(228, 118, 49, 0.22);
+            --shadow: 0 24px 80px rgba(30, 33, 31, 0.10);
+        }
+        * {
+            box-sizing: border-box;
+        }
         body {
+            min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            line-height: 1.65;
+            color: var(--ink);
+            max-width: 880px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 48px 22px;
+            background:
+                linear-gradient(135deg, rgba(228, 118, 49, 0.16), rgba(55, 63, 128, 0.10) 42%, rgba(255, 253, 249, 0) 72%),
+                var(--paper);
         }
         h1 {
-            color: #FF9500;
-            border-bottom: 2px solid #FF9500;
-            padding-bottom: 10px;
+            color: var(--ink);
+            margin: 0;
+            padding-bottom: 14px;
+            border-bottom: 2px solid var(--line);
+            font-size: clamp(2rem, 7vw, 3.5rem);
+            line-height: 1.05;
+            letter-spacing: 0;
+        }
+        h1::before {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 6px;
+            margin-bottom: 18px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-dark));
         }
         h2 {
-            color: #FF9500;
-            margin-top: 30px;
+            color: var(--accent-dark);
+            margin-top: 34px;
+            font-size: 1.15rem;
+            letter-spacing: 0;
         }
         p {
             margin-bottom: 20px;
         }
         .last-updated {
-            color: #666;
+            color: var(--muted);
             font-style: italic;
             margin-bottom: 30px;
         }
         .contact {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #f5f5f5;
+            margin-top: 42px;
+            padding: 22px;
+            background: var(--panel);
+            border: 1px solid var(--line);
             border-radius: 8px;
             text-align: center;
+            box-shadow: var(--shadow);
         }
         .contact a {
-            color: #FF9500;
+            color: var(--accent);
             text-decoration: none;
+            font-weight: 600;
         }
         .contact a:hover {
             text-decoration: underline;
         }
         .back-link {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #FF9500;
+            margin-top: 24px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
             color: white;
             text-decoration: none;
             border-radius: 8px;
-            font-weight: 500;
-            transition: background-color 0.2s;
+            font-weight: 700;
+            box-shadow: 0 14px 34px rgba(55, 63, 128, 0.22);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .back-link:hover {
-            background-color: #E68600;
+            transform: translateY(-1px);
+            box-shadow: 0 18px 42px rgba(55, 63, 128, 0.28);
+        }
+        @media (max-width: 640px) {
+            body {
+                padding: 32px 18px;
+            }
         }
     </style>
 </head>
@@ -72,11 +114,11 @@
 
     <p>HODL ranks, milestones, lock timers, quotes, history, free early unlocks, and paid early unlocks are motivational and utility features only. They are not financial advice, investment advice, behavioral health advice, or guarantees of any market outcome.</p>
 
-    <p>Free early unlocks and paid early unlocks are app features for ending a lock early. Paid early unlocks are optional consumable in-app purchases on iPhone. Early unlock credits have no cash value, cannot be transferred, cannot be exchanged for money or cryptocurrency, and can only be used inside HODL Time. Used consumables cannot be restored by Apple, and "Restore Purchases" is limited to unfinished transactions that Apple still makes available for delivery.</p>
+    <p>Free early unlocks and paid early unlocks are app features for ending a lock early. Paid early unlocks are optional consumable in-app purchases on iPhone and iPad. Early unlock credits have no cash value, cannot be transferred, cannot be exchanged for money or cryptocurrency, and can only be used inside HODL Time. Used consumables cannot be restored by Apple, and "Restore Purchases" is limited to unfinished transactions that Apple still makes available for delivery.</p>
 
     <p>If you enter portfolio holdings, that information is used for local display only. HODL Time does not verify ownership, custody, transactions, balances, tax lots, cost basis, gains, losses, or wallet activity.</p>
 
-    <p>HODL Time may display or synchronize locally stored state across iPhone, Apple Watch, widgets, and other supported Apple surfaces. We do not guarantee that these surfaces will always update immediately, remain perfectly synchronized, or stay available without interruption. Device connectivity, Apple system services, and third-party data providers can affect behavior.</p>
+    <p>HODL Time may display or synchronize locally stored state across iPhone, iPad, Apple Watch, widgets, and other supported Apple surfaces. We do not guarantee that these surfaces will always update immediately, remain perfectly synchronized, or stay available without interruption. Device connectivity, Apple system services, and third-party data providers can affect behavior.</p>
 
     <p>If enabled, notifications used by HODL Time are local notifications for lock-end reminders and milestone reminders. Notification delivery timing can depend on Apple system behavior and device state.</p>
 

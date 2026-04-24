@@ -5,61 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - HODL Time</title>
     <style>
+        :root {
+            --accent: #E47631;
+            --accent-dark: #373F80;
+            --ink: #1E211F;
+            --muted: #69706A;
+            --paper: #FFFDF9;
+            --panel: rgba(255, 255, 255, 0.82);
+            --line: rgba(228, 118, 49, 0.22);
+            --shadow: 0 24px 80px rgba(30, 33, 31, 0.10);
+        }
+        * {
+            box-sizing: border-box;
+        }
         body {
+            min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            line-height: 1.65;
+            color: var(--ink);
+            max-width: 880px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 48px 22px;
+            background:
+                linear-gradient(135deg, rgba(228, 118, 49, 0.16), rgba(55, 63, 128, 0.10) 42%, rgba(255, 253, 249, 0) 72%),
+                var(--paper);
         }
         h1 {
-            color: #FF9500;
-            border-bottom: 2px solid #FF9500;
-            padding-bottom: 10px;
+            color: var(--ink);
+            margin: 0;
+            padding-bottom: 14px;
+            border-bottom: 2px solid var(--line);
+            font-size: clamp(2rem, 7vw, 3.5rem);
+            line-height: 1.05;
+            letter-spacing: 0;
+        }
+        h1::before {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 6px;
+            margin-bottom: 18px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-dark));
         }
         h2 {
-            color: #FF9500;
-            margin-top: 30px;
+            color: var(--accent-dark);
+            margin-top: 34px;
+            font-size: 1.15rem;
+            letter-spacing: 0;
         }
         ul {
-            padding-left: 20px;
+            padding-left: 22px;
         }
         li {
             margin-bottom: 10px;
         }
         .last-updated {
-            color: #666;
+            color: var(--muted);
             font-style: italic;
             margin-bottom: 30px;
         }
         .contact {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #f5f5f5;
+            margin-top: 42px;
+            padding: 22px;
+            background: var(--panel);
+            border: 1px solid var(--line);
             border-radius: 8px;
             text-align: center;
+            box-shadow: var(--shadow);
         }
         .contact a {
-            color: #FF9500;
+            color: var(--accent);
             text-decoration: none;
+            font-weight: 600;
         }
         .contact a:hover {
             text-decoration: underline;
         }
         .back-link {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #FF9500;
+            margin-top: 24px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
             color: white;
             text-decoration: none;
             border-radius: 8px;
-            font-weight: 500;
-            transition: background-color 0.2s;
+            font-weight: 700;
+            box-shadow: 0 14px 34px rgba(55, 63, 128, 0.22);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .back-link:hover {
-            background-color: #E68600;
+            transform: translateY(-1px);
+            box-shadow: 0 18px 42px rgba(55, 63, 128, 0.28);
+        }
+        @media (max-width: 640px) {
+            body {
+                padding: 32px 18px;
+            }
         }
     </style>
 </head>
@@ -67,7 +109,7 @@
     <h1>Privacy Policy for HODL Time</h1>
     <p class="last-updated">Last updated: April 24, 2026</p>
 
-    <p>HODL Time is designed to work without creating an account or sending your personal data to our own servers. Throughout this document, references to "the app" refer to HODL Time across its supported Apple surfaces, including iPhone, Apple Watch, widgets, and related system integrations.</p>
+    <p>HODL Time is designed to work without creating an account or sending your personal data to our own servers. Throughout this document, references to "the app" refer to HODL Time across its supported Apple surfaces, including iPhone, iPad, Apple Watch, widgets, and related system integrations.</p>
 
     <h2>Data We Do Not Collect</h2>
     <ul>
@@ -86,7 +128,7 @@
 
     <h2>Purchases And Early Unlocks</h2>
     <ul>
-        <li>Optional paid early unlocks are sold on iPhone using Apple's StoreKit framework.</li>
+        <li>Optional paid early unlocks are sold on iPhone and iPad using Apple's StoreKit framework.</li>
         <li>Purchase processing, payment authorization, receipts, refunds, and billing support are handled by Apple through the App Store.</li>
         <li>We do not receive or store your payment card details.</li>
         <li>The app may receive StoreKit product identifiers, transaction identifiers, purchase status, and verification results so completed consumable purchases can be delivered correctly.</li>
@@ -96,15 +138,14 @@
 
     <h2>Cross-Device Sync</h2>
     <ul>
-        <li>When you use both iPhone and Apple Watch, certain app state can synchronize through Apple's App Groups and WatchConnectivity frameworks.</li>
+        <li>When you use iPhone and Apple Watch together, certain app state can synchronize through Apple's App Groups and WatchConnectivity frameworks. iPad support may vary by feature.</li>
         <li>This synced state can include settings, lock state, total HODL time, milestone progress, early unlock balance, and portfolio preferences or holdings if you use those features.</li>
         <li>All synced data remains inside Apple's ecosystem and is not exposed to external parties by us.</li>
     </ul>
 
-    <h2>Widgets, Live Activities, And Notifications</h2>
+    <h2>Widgets And Notifications</h2>
     <ul>
         <li>Widgets and related system surfaces may display locally stored or app-group-shared state so the app can show the correct price, lock status, and HODL progress.</li>
-        <li>On supported devices, Live Activities may display active lock state without requiring separate account data.</li>
         <li>If you enable notifications, the app uses local notifications for lock-end reminders and milestone reminders.</li>
         <li>Notification permissions are requested through Apple's system prompt only when you choose to enable them.</li>
     </ul>
